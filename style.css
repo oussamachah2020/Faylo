@@ -1,0 +1,450 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: hsl(218, 28%, 13%);
+  font-size: 14px;
+  color: hsl(0, 0%, 100%);
+  overflow: auto;
+}
+
+.header_navbar {
+  display: grid;
+  width: auto;
+  margin: 1.5rem;
+}
+
+.nav-list {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  justify-content: space-between;
+  align-items: center;
+
+  list-style: none;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+}
+
+.navbar-right-items__container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(3, 20%);
+  gap: 3em;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 4.375rem;
+}
+
+.container img {
+  width: 80%;
+  height: auto;
+}
+
+.container .img_container--description {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 2.2rem;
+  margin: 2.5rem 1rem;
+  text-align: center;
+  width: auto;
+  line-height: 1.5em;
+}
+
+.container .img_container--more {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  margin: 0 1rem;
+  text-align: center;
+  width: auto;
+  line-height: 1.5em;
+}
+
+.container_body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.button-start {
+  margin-top: 2.5rem;
+  height: 3.5rem;
+  width: 16rem;
+  border-radius: 50px;
+  outline: none;
+  border: none;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1.2em;
+  color: hsl(0, 0%, 100%);
+  background: linear-gradient(to right, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+}
+
+.container_body--services {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  /* grid-template-columns: repeat(2, 50%); */
+  /* margin-top: 4em; */
+}
+
+.service {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1.5em;
+  margin-top: 5em;
+}
+
+.container_body--services div > img {
+  width: 20%;
+  height: auto;
+}
+
+.service .service_title {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1.5625em;
+  text-align: center;
+  margin-top: 2.5em;
+}
+
+.service .description {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.1875em;
+  text-align: center;
+  margin-top: 1em;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+  flex-direction: column;
+  margin: 10em 0.2em;
+}
+
+.footer-content > img {
+  width: 100%;
+  height: auto;
+}
+
+.footer_content--title {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1.456em;
+  text-align: center;
+  margin-top: 2.5em;
+  position: relative;
+  left: 0.625em;
+}
+
+.footer_content--text-1,
+.footer_content--text-2 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.1875em;
+  text-align: start;
+  margin: 1em;
+}
+
+button.tuto-link {
+  margin: 1em;
+  background: none;
+  border: none;
+  color: hsl(176, 68%, 64%);
+  display: flex;
+  gap: 8px;
+  border-bottom: 1.5px solid hsl(176, 68%, 64%);
+  padding-bottom: 8px;
+}
+
+.footer-cards > img {
+  position: relative;
+  left: 5.5%;
+  top: 1rem;
+}
+
+.footer-cards {
+  grid-template-rows: repeat(3, 100%);
+}
+
+.card_1,
+.card_2,
+.card_3 {
+  background-color: hsl(219, 30%, 18%);
+  font-family: "Open Sans", sans-serif;
+  margin: 1.5em;
+  padding: 1em;
+  border-radius: 5px;
+}
+
+.user {
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+}
+
+.comment {
+  margin-bottom: 10px;
+  font-weight: 400;
+  line-height: 1.7rem;
+  padding: 10px;
+}
+
+.user .profile_pic {
+  width: 12%;
+  height: auto;
+  border-radius: 100%;
+  margin: 1em;
+}
+
+.user_informations {
+  margin-top: 0.7rem;
+}
+
+.user_informations .username {
+  font-weight: 700;
+  margin-bottom: 0.52rem;
+}
+
+.form-container {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  margin-top: 10em;
+  flex-direction: column;
+  font-family: "Open Sans", sans-serif;
+  background-color: hsl(217, 28%, 15%);
+  padding: 3.5rem;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 7px 10px -3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 7px 10px -3px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 7px 10px -3px rgba(0, 0, 0, 0.75);
+}
+
+.form-container__title {
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.form-container__description {
+  font-weight: 400;
+  text-align: center;
+  line-height: 1.7rem;
+  font-size: 0.953rem;
+}
+
+.form-container form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+input {
+  width: 22.5em;
+  height: 3.4rem;
+  margin-top: 2rem;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+}
+
+input[type="email"] {
+  padding-left: 2rem;
+}
+
+input#email::placeholder {
+  color: rgba(6, 6, 6, 0.396);
+}
+
+#submit-button {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  width: 18.5em;
+  color: hsl(0, 0%, 100%);
+  background: linear-gradient(to right, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+}
+
+footer > img {
+  margin: 5rem 2rem 2.5rem 2rem;
+  height: auto;
+}
+
+.informations {
+  font-family: "Open Sans", sans-serif;
+}
+
+.location,
+.phone,
+.email {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 0 0.625rem;
+  gap: 1.5rem;
+}
+
+.phone,
+.email {
+  margin-top: 2rem;
+}
+
+.location .location_text {
+  width: 90%;
+}
+
+.items_container {
+  font-family: "Open Sans", sans-serif;
+  margin: 5rem 0.8rem;
+}
+
+.items_container ul {
+  list-style: none;
+}
+
+.items_container ul li {
+  margin-top: 1rem;
+}
+
+.list2 {
+  margin-top: 2.5rem;
+}
+
+.buttom-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.buttom-icons img {
+  width: 40px;
+  border: 1px solid #ffff;
+  border-radius: 100%;
+  padding: 10px;
+}
+
+@media only screen and (min-width: 90em) {
+  .navbar-right-items__container .list-item {
+    font-size: 1rem;
+  }
+
+  .list-item > img {
+    width: 30%;
+  }
+
+  .container p,
+  .container img {
+    width: 50%;
+  }
+
+  .container_body--services {
+    grid-template-columns: repeat(2, 50%);
+  }
+
+  .service img {
+    width: 10%;
+  }
+
+  .footer-content {
+    margin-right: 8rem;
+    margin-left: 8rem;
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .footer_content--context {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    position: relative;
+    top: 2rem;
+  }
+
+  .footer-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 2.5rem;
+  }
+
+  .quotes {
+    position: relative;
+    top: 4rem;
+    left: 3rem;
+  }
+
+  .form-container {
+    margin-left: 15rem;
+    margin-right: 15rem;
+  }
+
+  .form-container form {
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+
+  #email {
+    width: 40em;
+  }
+
+  footer {
+    margin: 0 3.5rem;
+  }
+
+  .informations {
+    display: flex;
+    gap: 2.5rem;
+  }
+
+  .location {
+    width: 40%;
+  }
+
+  .items_container {
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  .contacts {
+    position: relative;
+    top: -2rem;
+  }
+
+  .items_container {
+    position: relative;
+    top: -6rem;
+  }
+
+  .list2 {
+    margin-top: 0 !important;
+  }
+
+  .buttom-icons {
+    position: relative;
+    top: -7rem;
+  }
+}
